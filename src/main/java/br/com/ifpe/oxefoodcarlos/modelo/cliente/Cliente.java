@@ -1,31 +1,47 @@
 package br.com.ifpe.oxefoodcarlos.modelo.cliente;
 
-import javax.persistence.GenerationType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import org.hibernate.annotations.Where;
 
 import br.com.ifpe.oxefoodcarlos.util.entity.EntidadeAuditavel;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
+/**
+ * @author Roberto Alencar
+ *
+ */
 @Entity
-@Table(name = "Cliente");
-
+@Table(name = "Cliente")
+@Where(clause = "habilitado = true")
+@Builder
+@Setter
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
 public class Cliente extends EntidadeAuditavel {
-	
-	
-	@Column
-	private String chaveEmpresa;
-	
-	@Column
-	private String nome;
-	
-	@Column
-	private String cfp;
-	
-	@Column
-	private String fone;
-	
-	@Column
-	private String foneAlternativo;
-	
-	
-	
+    
+    private static final long serialVersionUID = 7830960733588385306L;
+
+    @Column
+    private String chaveEmpresa;
+    
+    @Column
+    private String nome;
+    
+    @Column
+    private String cpf;
+    
+    @Column
+    private String fone;
+    
+    @Column
+    private String foneAlternativo;
 
 }
