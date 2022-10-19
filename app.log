@@ -1,0 +1,37 @@
+2022-10-11 20:40:57.325  INFO 2263 --- [restartedMain] b.c.i.o.OxefoodCarlosApplication         : Starting OxefoodCarlosApplication using Java 17.0.4.1 on carlosjunior-VirtualBox with PID 2263 (/home/carlosjunior/Documentos/oxefood-carlos/target/classes started by carlosjunior in /home/carlosjunior/Documentos/oxefood-carlos)
+2022-10-11 20:40:57.337  INFO 2263 --- [restartedMain] b.c.i.o.OxefoodCarlosApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-10-11 20:40:57.536  INFO 2263 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-11 20:40:57.547  INFO 2263 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-11 20:40:58.781  INFO 2263 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-11 20:40:58.843  INFO 2263 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 0 JPA repository interfaces.
+2022-10-11 20:41:00.090  INFO 2263 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2022-10-11 20:41:00.108  INFO 2263 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-11 20:41:00.110  INFO 2263 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-11 20:41:00.266  INFO 2263 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-11 20:41:00.268  INFO 2263 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2714 ms
+2022-10-11 20:41:00.412  INFO 2263 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-11 20:41:00.733  INFO 2263 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-11 20:41:00.750  INFO 2263 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/oxefood'
+2022-10-11 20:41:01.283  INFO 2263 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-11 20:41:01.345  INFO 2263 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.11.Final
+2022-10-11 20:41:01.493  INFO 2263 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-11 20:41:01.603  INFO 2263 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-10-11 20:41:01.981  INFO 2263 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-11 20:41:01.990  INFO 2263 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-11 20:41:02.102  WARN 2263 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-11 20:41:03.375  WARN 2263 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: ba03c171-2350-45a9-8873-ceaff9657159
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-10-11 20:41:03.562 DEBUG 2263 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [authenticated] for any request
+2022-10-11 20:41:03.671  INFO 2263 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@69698885, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@74884a0f, org.springframework.security.web.context.SecurityContextPersistenceFilter@6ce81c9b, org.springframework.security.web.header.HeaderWriterFilter@4925426e, org.springframework.security.web.csrf.CsrfFilter@4f0513cf, org.springframework.security.web.authentication.logout.LogoutFilter@350f541e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1294217a, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2ed2ae08, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@690fa8f0, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3de41314, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7b38c6ab, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@57980193, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4d68287b, org.springframework.security.web.session.SessionManagementFilter@739277b, org.springframework.security.web.access.ExceptionTranslationFilter@15d34a9d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5286f934]
+2022-10-11 20:41:03.783  INFO 2263 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-11 20:41:03.885  INFO 2263 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2022-10-11 20:41:03.920  INFO 2263 --- [restartedMain] b.c.i.o.OxefoodCarlosApplication         : Started OxefoodCarlosApplication in 7.447 seconds (JVM running for 9.009)
+2022-10-11 20:54:01.862  INFO 2263 --- [RMI TCP Connection(20)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-10-11 20:54:01.965  INFO 2263 --- [RMI TCP Connection(20)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-10-11 20:54:02.079  INFO 2263 --- [RMI TCP Connection(20)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-11 20:54:02.113  INFO 2263 --- [RMI TCP Connection(20)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-11 20:54:02.171  INFO 2263 --- [RMI TCP Connection(20)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
