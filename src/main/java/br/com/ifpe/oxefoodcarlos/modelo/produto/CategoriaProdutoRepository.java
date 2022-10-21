@@ -15,5 +15,7 @@ public interface CategoriaProdutoRepository extends JpaRepository<CategoriaProdu
 
     @Query(value = "SELECT c FROM CategoriaProduto c WHERE c.id = :id AND c.chaveEmpresa = :chaveEmpresa")
     CategoriaProduto findByIdAndChave(Long id, String chaveEmpresa);
+    
+    
 
 }

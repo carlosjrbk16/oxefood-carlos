@@ -1,5 +1,7 @@
 package br.com.ifpe.oxefoodcarlos.modelo.produto;
 
+import java.util.List;
+
 import javax.transaction.Transactional;
 
 import org.apache.commons.lang3.StringUtils;
@@ -11,6 +13,8 @@ import br.com.ifpe.oxefoodcarlos.util.exception.EntityAlreadyExistsException;
 
 @Service
 public class CategoriaProdutoService extends GenericService {
+	
+	
     
     @Autowired
     private CategoriaProdutoRepository repository;
@@ -45,4 +49,18 @@ public class CategoriaProdutoService extends GenericService {
         }
     }
     }
+    
+    @Transactional
+    public CategoriaProduto findById(Long id) {
+
+    return repository.findById(id).get();
+    }
+    
+
+    @Transactional
+    public List<CategoriaProduto> consultarPorChaveEmpresa(String chaveEmpresa) {
+
+    return repository.findByChaveEmpresaOrderByDescricaoAsc(chaveEmpresa);
+    }
+
 }
