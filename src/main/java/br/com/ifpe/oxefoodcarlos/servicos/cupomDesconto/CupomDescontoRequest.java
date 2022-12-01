@@ -9,35 +9,31 @@ import lombok.NoArgsConstructor;
 @Data
 @Builder
 @NoArgsConstructor
-@AllArgsConstructor
+@AllArgsConstructor	
 public class CupomDescontoRequest {
 
-	private String chaveEmpresa;
-	
-	private String codigoDesconto;
-	
-	private double valorDesconto;
-	
-	private double valorMinimoPedidoPermitido;
-	
-	private double percentualDesconto;
-	
-	private int quantidadeUso;
-	
+    private String chaveEmpresa;
+    
+    private String codigoDesconto;
+    
+    private Double percentualDesconto;
+    
+    private Double valorDesconto;
+    
+    private Double valorMinimoPedidoPermitido;
+    
+    private int quantidadeUso;
+    
+    public CupomDesconto buildCupomDesconto() {
 
-
-public CupomDesconto buildCupomDesconto() {
-
-	CupomDesconto cupomDesconto = CupomDesconto.builder()
-		.chave(chaveEmpresa)
+	return CupomDesconto.builder()
+		.chaveEmpresa(chaveEmpresa)
 		.codigoDesconto(codigoDesconto)
-		.criadoPor(quantidadeUso)
 		.percentualDesconto(percentualDesconto)
+		.valorDesconto(valorDesconto)
+		.valorMinimoPedidoPermitido(valorMinimoPedidoPermitido)
 		.quantidadeUso(quantidadeUso)
-		.valorMinimoPedidoPermitidos(valorMinimoPedidoPermitido)
 		.build();
-		
-	
-	return cupomDesconto;
     }
+    
 }

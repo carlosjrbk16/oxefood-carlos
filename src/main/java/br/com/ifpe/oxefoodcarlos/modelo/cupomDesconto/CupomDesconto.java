@@ -17,40 +17,39 @@ import lombok.Setter;
 @Table(name = "CupomDesconto")
 @Where(clause = "habilitado = true")
 @Builder
-@Setter
 @Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 public class CupomDesconto extends EntidadeAuditavel {
-	
-	private static final long serialVersionUID = 
-	
-	@Column
-	private int quantidadeUso;
-	
-	@Column
-	private double valorMinimoPedidoPermitidos;
-	
-	@Column
-	private double valorDesconto;
-	
-	@Column
-	private double percentualDesconto;
-	
-	@Column
-	private String codigoDesconto;
-	
-	@Column
-	private String chave;
-		
-	@Column
-	private long versao;
-	
-	@Column
-	private long criadoPor;
-	
-	@Column
-	private long ultimaModificadoPor;
-	
+    
+    private static final long serialVersionUID = 6479575062813507979L;
+    
+    @Column
+    private String chaveEmpresa;
+    
+    @Column
+    private String codigoDesconto;
+    
+    @Column
+    private Double percentualDesconto;
+    
+    @Column
+    private Double valorDesconto;
+    
+    @Column
+    private Double valorMinimoPedidoPermitido;
+    
+    @Column
+    private int quantidadeUso;
+    
+    public void updateFrom(CupomDesconto param) {
 
+	this.setChaveEmpresa(param.getChaveEmpresa());
+	this.setCodigoDesconto(param.getCodigoDesconto());
+	this.setPercentualDesconto(param.getPercentualDesconto());
+	this.setValorDesconto(param.getValorDesconto());
+	this.setValorMinimoPedidoPermitido(param.getValorMinimoPedidoPermitido());
+	this.setQuantidadeUso(param.getQuantidadeUso());
+    }
 }
